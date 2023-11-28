@@ -1,0 +1,151 @@
+<html>
+
+<head>
+
+    <title>Ecommerce Product Website - Easy Tutorials</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="row">
+            <div class="col">
+
+                <div class="slider">
+                    <div class="product">
+                        
+                        <div class="img-container">
+                            <img src="images/product1.png" alt="" onclick="clickme(this)">
+                         </div>
+                         <div class="img-container">
+                            <img src="images/product1.png" alt="" onclick="clickme(this)">
+                         </div>
+                        <div class="img-container">
+                            <img src="images/product1.png" alt="" onclick="clickme(this)">
+                        </div>
+                        <div class="img-container">
+                            <img src="images/product1.png" alt="" onclick="clickme(this)">
+                        </div>
+                        <div class="img-container">
+                            <img src="images/product1.png" alt="" onclick="clickme(this)">
+                            <p class="see-all-text"><b>See all <i class="fas fa-greater-than" style="font-size:x-small;"></i></b></p>
+                        </div>
+                       
+                   
+                    </div>
+                    <div class="preview">
+                        <img src="images/product1.png" id="imagebox" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+
+                <div class="content">
+                    <h1>Kurti</h1>
+                    <br><br>
+                    <h3>Chikankari</h3>
+                    <br>
+                    <p style="color: #797575;">emarkably renowned for its extraordinary rustic charm, Madhubani painting is widely practiced throughout Bihar's Mithila region.Women from variation...</p>
+                
+                    <p id="readMore" onclick="readMoreClick()"><u>Read more...</u></p>
+                   
+
+                   <div class="rating-box">
+                    <span class="fas fa-star"></span> 5/5
+                   </div>
+                   <p class="ratings"><b>124 ratings</b> </p>
+                   
+
+                    <p class="price">₹ 6000* <span class="discount"><strike>₹9000</strike> 25% off</span></p>
+                    <p class="subtext3">Inclusive of all taxes</p>  
+                
+                    <p style="color: black;">Select Color</p>
+                    <div class="color-options">
+                        <img src="images/black.png" alt="Black" onclick="selectColor(this)">
+                        <img src="images/purple.png" alt="purple" onclick="selectColor(this)">
+                        <img src="images/orange.png" alt="orange" onclick="selectColor(this)">
+                    </div>
+
+                    <p class="subtext1"><u>View similar</u></p>
+                   <br><br>
+
+
+                   
+                    <p style="color: black;">Select Size</p>
+                    <div class="size-options">
+                        <input type="button" value="32" onclick="selectSize(this)" class="size-button">
+                        <input type="button" value="32" onclick="selectSize(this)" class="size-button">
+                        <input type="button" value="34" onclick="selectSize(this)" class="size-button">
+                        <input type="button" value="36" onclick="selectSize(this)" class="size-button">
+                        <input type="button" value="38" onclick="selectSize(this)" class="size-button">
+                        <input type="button" value="40" onclick="selectSize(this)" class="size-button">
+                        <input type="button" value="+" onclick="selectSize(this)" class="size-button">
+                    </div>
+                    
+                    <p class="subtext2"><span class="scale-icon"><i class="fas fa-ruler"></i><u>Select Guide</u></p>
+   
+                </div>
+
+                <div class="button-container">
+                    <button type="button" class="add-to-cart">
+                        Add to Cart <i class="fa fa-shopping-cart"></i> 
+                    </button>
+                    <button type="button" class="buy-now">
+                        Buy Now
+                    </button>
+                </div>
+                <br>
+            
+               <div class="additional-features">
+                    <div class="feature">
+                        <i class="fa fa-truck"></i>
+                        <p>Free Shipping in India</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-medal"></i>
+                        <p>Assured Quality</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-box-open"></i>
+                        <p>Easy Return</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-wallet"></i>
+                        <p>Safe Payment Options</p>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+
+       
+    </div>
+
+
+
+    <script>
+        function clickme(smallImg) {
+
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
